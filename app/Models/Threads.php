@@ -16,4 +16,8 @@ class Threads extends Model
     public function replies(){
         return $this->hasMany(Replies::class);
     }
+
+    public function creator(){
+        return $this->belongsTo(User::class, 'user_id');
+    }
 }
