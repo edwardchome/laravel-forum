@@ -2,17 +2,17 @@
 
 namespace Tests\Feature;
 
+use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Tests\TestCase;
 
-class ExampleTest extends TestCase
+class ThreadsTest extends TestCase
 {
+    use DatabaseMigrations;
     /**
-     * A basic test example.
-     *
-     * @return void
+     * @test
      */
-    public function testBasicTest()
+    public function a_user_can_browse_threads()
     {
         $response = $this->get('/');
 
