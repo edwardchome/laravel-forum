@@ -25,7 +25,7 @@ class RepliesFactory extends Factory
             //
             "user_id"=> self::factoryForModel(\App\Models\User::class),
             "threads_id"=> self::factoryForModel(\App\Models\Threads::class),
-            'body'=>$this->faker->paragraph
+            'body'=>$this->faker->sentence
         ];
     }
 }
