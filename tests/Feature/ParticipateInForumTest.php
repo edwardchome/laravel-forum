@@ -53,7 +53,7 @@ class ParticipateInForumTest extends TestCase
         $this->post($this->thread->path().'/replies',$reply->toArray());
 
         $this->get($this->thread->path())
-            ->assertSee($reply->getAttributes());
+            ->assertSee($reply->body);
     }
 
 

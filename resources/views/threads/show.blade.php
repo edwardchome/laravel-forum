@@ -37,7 +37,7 @@
                         <div class="form-group">
                             <textarea name="body" id="body" cols="30" class="form-control" rows="5"></textarea>
                         </div>
-                        <button type="submit" class="btn btn-danger">Post</button>
+                        <button type="submit" class="btn btn-primary">Post</button>
                     </form>
                 </div>
             </div>
