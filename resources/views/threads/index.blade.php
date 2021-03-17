@@ -8,15 +8,11 @@
                     <div class="card-header">{{ __('Forum Threads') }}</div>
 
                     <div class="card-body">
-{{--                        @if (session('status'))--}}
-{{--                            <div class="alert alert-success" role="alert">--}}
-{{--                                {{ session('status') }}--}}
-{{--                            </div>--}}
-{{--                        @endif--}}
+
                         @foreach($threads as $thread)
                             <article>
                                 <h4>
-                                    <a href="/threads/{{$thread->id}}">
+                                    <a href="{{$thread->path()}}">
                                         {{$thread->title}}
                                     </a>
                                 </h4>

@@ -52,4 +52,12 @@ class ThreadTest extends TestCase
 
         $this->assertCount(1,$this->thread->replies);
     }
+
+    /**
+     * @test
+     */
+    public function a_thread_belongs_to_a_channel(){
+        $thread = Threads::factory()->create();
+        $this->assertInstanceOf("App\Models\Channel",$thread->channel);
+    }
 }
